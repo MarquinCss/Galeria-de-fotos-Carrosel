@@ -1,0 +1,130 @@
+
+ 
+
+  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+
+
+*{cursor: url(cursor.cur),default;
+
+
+}
+
+body{
+    margin:0;
+    padding:0;
+  background-image:url(https://animais.culturamix.com/blog/wp-content/uploads/2020/07/Aves.jpg);
+  cursor: url(cursor.cur),default;
+
+
+}
+h1{
+        Text-align:center;
+        box-shadow: 10px 10px 10px white;
+     font-family: 'Caveat', cursive;
+        background:linear-gradient(to right,white, 50%,white 90%) ;
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 2s linear infinite;}
+    @keyframes animate{
+        to{
+            background-position:200%;
+            
+        }}
+        .container{
+          
+
+height:560px;
+width:900px;
+overflow:hidden;
+position:absolute;
+top:70%;
+left:50%;
+transform:translate(-50%,-50%)
+        }
+
+    .bar{
+        background-color:#A9A9A9;
+width: 30px;
+height:5px;
+margin:7px;
+transition:.3s;
+    }
+
+ .navegacao{
+        position:absolute;
+        bottom:20px;
+        left:50%;
+        transform: translate(-50%);
+        display:flex;
+    }
+
+.bar:hover{
+        background-color:white;
+
+    }
+    
+    input{
+        display:none;
+    }
+
+    .imagens{
+        display:flex;
+        height:100%;
+        width:600%;
+        
+        
+    }
+    .imagem{
+        width:16.666666667%;
+        transition: .3s;
+
+    }
+    .imagem img{
+        width:100%;
+        height:100%;
+    }
+
+    #imagem1:checked ~ .img1{
+        margin-left:0;
+    }
+
+    #imagem2:checked ~ .img1{
+        margin-left:-16.6666666667%;
+    }
+
+#imagem3:checked ~ .img1{
+    margin-left:-33.3333333334%;
+}
+
+#imagem4:checked~.img1{
+    margin-left:-50%;
+     
+}
+
+
+#imagem5:checked ~ .img1{
+    margin-left: -66.999999999%;
+}
+
+#imagem6:checked ~ .img1{
+    margin-left: -83.3333333333%;
+}
+
+.Titulo-Galeria{
+    font-size:40px;
+    
+
+}
+
+footer{
+    text-align: center;
+    position:absolute;
+    bottom:-200px;
+    left:50%;
+    transform: translate(-50%);
+   background:url(https://socientifica.com.br/wp-content/uploads/2022/02/aves-biodiversidade.jpg);
+    width:100%;
+
+}
